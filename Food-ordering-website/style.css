@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+input, textarea, button, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  background: #c74b3a;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #9b3a2d;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Filter Dropdown Styling */
+.filter-container {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.filter-container label {
+  margin-right: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+#filterSelect {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #888;
+  font-weight: normal;
+  cursor: pointer;
+  background: #fff;
+  color: #333;
+  width: auto; /* shrink size */
+}
+
+
+/* Menu Cards */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  font-weight: bold;
+  color: #c74b3a;
+  margin: 8px 0;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #28a745;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  animation: fadeInOut 2s ease;
+}
+
+/* Popup fade animation */
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Enjoy the food</h1>
+    </header>
+
+    <main>
+      <!-- LOGIN PAGE -->
+      <section id="loginSection" class="center-box">
+        <h2>Login</h2>
+        <label for="username">Name</label>
+        <input id="username" type="text" placeholder="Enter your name">
+
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter your password">
+
+        <button id="loginBtn">Login</button>
+      </section>
+
+      <!-- MENU PAGE -->
+      <section id="menuSection" class="hidden">
+        <h2>Food Menu</h2>
+        <p>Welcome, <span id="userDisplay"></span></p>
+
+        <div class="filter-container">
+          <label for="filterSelect">Filter Menu:</label>
+          <select id="filterSelect">
+            <option value="all">All</option>
+            <option value="veg">Veg</option>
+            <option value="nonveg">Non-Veg</option>
+          </select>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+      </section>
+
+      <!-- ADDRESS PAGE -->
+      <section id="addressSection" class="hidden center-box">
+        <h2>Delivery Details</h2>
+        <div id="orderSummary"></div>
+
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="tel" placeholder="Enter 10-digit phone number">
+
+        <label for="address">Address</label>
+        <textarea id="address" rows="3" placeholder="Enter your delivery address"></textarea>
+
+        <button id="confirmOrderBtn">Confirm Order</button>
+        <p id="formError" class="error hidden"></p>
+      </section>
+    </main>
+  </div>
+
+  <div id="popup" class="popup hidden">Order Confirmed!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
